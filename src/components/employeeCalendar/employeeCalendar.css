@@ -1,0 +1,33 @@
+.cal {
+  margin: 10px;
+}
+
+.cal-header {
+  border-bottom: 1px solid lightgrey;
+}
+
+.cal-header-row {
+  width: 12%;
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: Poppins;
+  color: rgb(52, 50, 50);
+}
+
+.cal-value-row {
+  width: 12%;
+  padding: 0.75rem;
+}
+
+.cal-value-row .type {
+  font-size: 0.75rem;
+}
+
+.cal-value-row .hours {
+  font-size: 0.55rem;
+}
+
+.cal-value-row .row-box {
+  border-radius: 17px;
+}

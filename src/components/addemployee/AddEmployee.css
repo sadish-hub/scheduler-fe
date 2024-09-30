@@ -1,39 +1,25 @@
-.main .info {
-  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 400;
-  font-size: larger;
+.add-employee {
 }
 
-.main .nav img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.add-employee-top .shift-form {
+  width: 60%;
+  /* margin: 100px; */
 }
 
-.shift-form {
-  padding-right: 15px;
-}
-
-.holder {
+.add-employee-container {
   width: 95%;
   margin: 0px;
   margin-left: 1em;
-
   display: flex;
   gap: 20px;
-  /* Added to allow wrapping on smaller screens */
   flex-wrap: wrap;
-  min-height: 88vh; /* Adjust as needed */
+  min-height: 88vh;
   background-color: #fff;
-  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.main .top {
+.add-employee-top {
   /* Ensure each main-top takes up 50% of the container */
   flex: 1 1 45%; /* Allows some flexibility and maintains margins */
   display: flex;
@@ -61,20 +47,21 @@
   animation: loader 4s infinite linear;
 }
 
-.form-group input {
-  border-radius: 5px;
-}
-
-.shift-form {
-  width: 70%;
-}
-
-.shift-form button {
+.add-employee-top .shift-form button {
   background: linear-gradient(to right, #1b6286, #420e09);
   color: white;
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
+}
+
+.add-employee-top .shift-form .form-group button {
+  background: linear-gradient(to right, #1b6286, #420e09);
+  color: white;
+  font-weight: 200;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 50%;
 }
 
 @keyframes loader {

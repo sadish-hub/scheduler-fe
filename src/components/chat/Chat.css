@@ -1,0 +1,159 @@
+.chat {
+  /* Ensure each main-top takes up 50% of the container */
+  flex: 1 1 45%; /* Allows some flexibility and maintains margins */
+  display: flex;
+  flex-direction: column; /* Stack internal elements vertically */
+  /* Optional: To ensure consistent height */
+  /* min-height: 300px; */
+  border-radius: 20px; /* Adjust the value as needed for the desired curve */
+  overflow: hidden; /* Optional: Ensures children do not overflow the border */
+  border: 1px solid #cccccc; /* Optional: Add a border to visualize the curve */
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.greet {
+  margin: 5px 0px;
+  font-size: 23px;
+  color: #c4c7c5;
+  font-weight: 600;
+  width: 100%; /* Ensure it takes full width of its parent */
+}
+
+.greet span {
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards {
+  /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); */
+  gap: 15px;
+}
+
+.card {
+  height: 120px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card img {
+  width: 35px;
+  padding: 5px;
+  position: absolute;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+  background: white;
+}
+
+.card p {
+  color: #585858;
+  font-size: 13px;
+}
+
+.card:hover {
+  background-color: #dfe4ea;
+}
+
+.main-bottom {
+  /* Changed from absolute to relative to stay within its parent */
+  position: relative;
+  /* Removed max-width to inherit from parent */
+  width: 100%;
+  padding: 10px;
+  margin-top: auto; /* Pushes it to the bottom of the main-top */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f0f4f9;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.search-box img {
+  width: 24px;
+  cursor: pointer;
+}
+
+.search-box input {
+  flex: 1;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.search-box div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.bottom-info {
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+.result {
+  padding: 0px 5%;
+  max-height: 70vh;
+  overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar {
+  display: none;
+}
+
+.result-title {
+  margin: 40px 0px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.result img {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.result-data {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.loader hr {
+  border-radius: 4px;
+  border: none;
+  background-color: #f6f7f8;
+  background: linear-gradient(to right, #b1d5ee, #c953e98a, #9ed7ff);
+  background-size: 800px 50px;
+  height: 20px;
+  animation: loader 4s infinite linear;
+}

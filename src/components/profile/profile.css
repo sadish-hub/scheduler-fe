@@ -1,0 +1,88 @@
+.profile {
+}
+
+.profile .holder {
+  width: 95%;
+  margin: 0px;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  min-height: 88vh;
+  padding: 20px;
+}
+
+.profile .details {
+  /* display: flex;
+  gap: 20px; */
+}
+
+.details .header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.details .profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.details .row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: beige;
+}
+
+.details .row .info1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Black 100 */
+  color: #252834;
+  margin: 10px;
+}
+.details .row .info1 .name {
+  font-weight: 800;
+  font-size: medium;
+}
+.details .row .info1 p span {
+  font-weight: 600;
+}
+.details .row .info2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  /* or 150% */
+
+  /* Black 100 */
+  color: #252834;
+  margin: 10px;
+}
+.details .row .info2 p span {
+  font-weight: 600;
+}
+
+.details .row .edit {
+  margin: 10px;
+}
+
+@keyframes loader {
+  0% {
+    background-position: -800px 0px;
+  }
+  100% {
+    background-position: 800px 0px;
+  }
+}
